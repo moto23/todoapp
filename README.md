@@ -4,11 +4,11 @@ This is a To-Do List application built with React and Material-UI. The app allow
 
 ## Insights of todoapp
 
-![Dashboard Logo](p1.png)
+![Dashboard Logo](t1.png)
 
-![Dashboard Logo](p2.png)
+![Dashboard Logo](t2.png)
 
-![Dashboard Logo](p3.png)
+![Dashboard Logo](t3.png)
 
 ## Features
 
@@ -25,6 +25,17 @@ This is a To-Do List application built with React and Material-UI. The app allow
 - **Animations**: Includes animations for task addition and expansion.
 - **Colorful Cards**: Tasks are displayed as colorful cards for better visual appeal.
 - **URL Parameters**: Utilizes URL parameters to handle search functionality.
+
+## Tools and Technologies
+
+### Frontend
+- **React**: A JavaScript library for building user interfaces.
+- **Material-UI**: A popular React UI framework.
+- **React Router**: For handling URL parameters and routing.
+- **axios**: For making HTTP requests.
+
+### Styling
+- **Material-UI**: Provides a set of React components that implement Google's Material Design.
 
 ## System Design
 
@@ -44,6 +55,9 @@ This is a To-Do List application built with React and Material-UI. The app allow
 - Tasks are filtered based on the search query entered by the user.
 
 ## Getting Started
+
+Runs the app in the development mode.\
+Open [https://todoapp-nine-pi.vercel.app/](https://todoapp-nine-pi.vercel.app/) to view it in the browser.
 
 ### Prerequisites
 - Node.js and npm installed on your machine.
@@ -73,28 +87,6 @@ The app should now be running on `http://localhost:3000`.
 - To mark a task as done, click the checkbox on the task card.
 - To delete a task, click the delete icon on the task card.
 - Use the search bar in the sidebar to filter tasks by title.
-
-## Code Structure
-
-todoapp/
-├── public/
-│ └── index.html
-├── src/
-│ ├── components/
-│ │ ├── Sidebar.jsx
-│ │ ├── TaskForm.jsx
-│ │ ├── TaskItem.jsx
-│ │ └── TaskList.jsx
-│ ├── pages/
-│ │ └── CreateTask.jsx
-│ ├── utils/
-│ │ └── useTasks.js
-│ ├── data.json
-│ ├── App.jsx
-│ └── index.js
-├── .gitignore
-├── package.json
-└── README.md
 
 
 ## Contributing
