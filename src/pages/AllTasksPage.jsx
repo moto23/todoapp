@@ -1,6 +1,5 @@
-// src/pages/AllTasksPage.jsx
 import React, { useEffect, useState } from 'react';
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Typography, Grid } from '@mui/material';
 import TaskList from '../components/TaskList';
 import useTasks from '../utils/useTasks';
 import Sidebar from '../components/Sidebar';
@@ -23,20 +22,20 @@ const AllTasksPage = () => {
   }, [searchQuery, tasks]);
 
   return (
-    <Box sx={{ display: 'flex' }}>
-      <Sidebar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-      <Container sx={{ mt: 3, ml: 2, flexGrow: 1 }}>
+    <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' } }}>
+      <Box sx={{ width: { xs: '100%', md: '250px' }, mb: { xs: 2, md: 0 } }}>
+        <Sidebar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+      </Box>
+      <Container sx={{ mt: 3, flexGrow: 1 }}>
         <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
           All Tasks
         </Typography>
-        <Box>
-          <TaskList
-            tasks={filteredTasks}
-            toggleTaskCompletion={toggleTaskCompletion}
-            updateTask={updateTask}
-            deleteTask={deleteTask}
-          />
-        </Box>
+        <TaskList
+          tasks={filteredTasks}
+          toggleTaskCompletion={toggleTaskCompletion}
+          updateTask={updateTask}
+          deleteTask={deleteTask}
+        />
       </Container>
     </Box>
   );
