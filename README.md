@@ -2,7 +2,8 @@
 
 This is a To-Do List application built with React and Material-UI. The app allows users to create, update, mark as done, and delete tasks. It also features a search functionality to filter tasks and displays tasks in an expandable list format with colorful cards.
 
-##Insights of todoapp
+## Insights of todoapp
+
 ![Dashboard Logo](p1.png)
 
 ![Dashboard Logo](p2.png)
